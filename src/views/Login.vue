@@ -1,7 +1,7 @@
 <template>
   <i class="iconfont icon-guanbi" @click="handleClose"></i>
   <label for="">登录页</label>
-  <a-form :model="formData">
+  <a-form class="login-form" :model="formData">
     <a-form-item>
       <a-input v-model:value="formData.name" placeholder="输入账号" />
     </a-form-item>
@@ -63,5 +63,12 @@ export default defineComponent({
   left: 6px;
   top: 6px;
   color: red;
+}
+.login-form {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 50px;
+  top: 50px;
 }
 </style>
